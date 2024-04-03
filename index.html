@@ -99,9 +99,9 @@ https://templatemo.com/tm-569-edu-meeting
     </video>
 
     <!-- Mobile Video -->
-    <video loop muted playsinline preload="true" id="mobile-video" poster="assets/images/newImages/bg-poster.jpg">
-      <source src="assets/images/newImages/bg-video.mp4" type="video/mp4" />
-      <source src="assets/images/newImages/bg-video.webm" type="video/webm" />
+    <video autoplay loop muted playsinline preload="true" id="mobile-video" poster="assets/images/newImages/bg-poster.jpg">
+        <source src="assets/images/newImages/bg-video.mp4" type="video/mp4" />
+        <source src="assets/images/newImages/bg-video.webm" type="video/webm" />
     </video>
 
     <div class="video-overlay header-text">
@@ -399,14 +399,6 @@ https://templatemo.com/tm-569-edu-meeting
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-        // JavaScript to control video playback
-        window.onload = function() {
-            var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-            if (isMobile) {
-                var mobileVideoElement = document.getElementById('mobile-video');
-                mobileVideoElement.play();
-            }
-        };
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 
